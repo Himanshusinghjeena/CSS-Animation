@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        #moving-element {
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
+
+
+        @keyframes move {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        #moving-element {
+            animation: move 7s linear infinite;
+            color:rgb(171, 4, 171);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="moving-element"> CSS animation that moves an element across the screen continuously.</div>
+</body>
+
+</html>
